@@ -423,7 +423,7 @@ body_lines = [
     format_row('sol'),
     f"\n🔺**Top Gainer:** {top_coin_key.upper()}\n",
     f"![{selected_prefix}]({selected_display_image})",
-    f"*AI generated image*\n"
+    f'<div class="footer">\n  <div class="pull-left">\n    Follow @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  Layout by @blog.god\n</div>'
 ]
 
 # Only inject the shout-out if a valid post was successfully scanned
@@ -436,7 +436,7 @@ if scanned_post_data:
     # Format the shout-out line with an embedded hyperlink to the post
     shoutout_text = (
         f"A big shout-out to @{author} for keeping up with the crypto space today! "
-        f"Check out their latest update here: **[{permlink}]({steemit_url})**.\n"
+        f"Check out their latest update here: **[{permlink}]({steemit_url})**\n"
     )
     
     # Placed at index 1 to keep it near the top of the post as requested
