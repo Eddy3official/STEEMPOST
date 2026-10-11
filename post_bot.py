@@ -23,17 +23,17 @@ time.sleep(random_delay_seconds)
 # ==========================================
 MY_ACCOUNT = "blog.god"  
 TARGET_COMMUNITY = "hive-129948"  
-CUSTOM_TAGS = ["cryptocurrency", "crypto", "blog", "trading", "blockchain", "report"]
+CUSTOM_TAGS = ["art", "crypto", "blog", "trading", "blockchain", "report"]
 CRYPTO_KEYWORDS = ["crypto", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "bnb", "trading", "blockchain"]
 
 # Ultra-low RC asset images mapped explicitly (Per coin asset category)
 IMAGE_MATRIX = {
     'btc': [
-        "https://cdn.steemitimages.com/DQmZi457jBge1mfGXDGyj9bhCxeAXcEfaLgwnrtKcVHdmVs/1000027726.jpg",
-        "https://cdn.steemitimages.com/DQmc1LphNvohBCUsroZ9zjRuL3VzaVJfMVN9oN8hDmX5M9A/1000024867.jpg",
-        "https://cdn.steemitimages.com/DQmQjKH5D34ym38roHSoCKh7W79GaV3f6Hh3FNAf7zH6x4K/1000024869.jpg",
-        "https://cdn.steemitimages.com/DQmPNweKd69d1esmMV7DDFFkqs1oPYjEP4TMRqx7TKySk4F/1000024870.jpg",
-        "https://cdn.steemitimages.com/DQmVphp18Aq5jdTu2VsvaQ8SK22FQrsoHHMvCnivwFn2ECz/1000024872.jpg"
+        "https://cdn.steemitimages.com/DQmdpwMbaNCXxsNitesDjWo9HRWFsJq86yTK9seJbofEV7Y/1000029397.jpg",
+        "https://cdn.steemitimages.com/DQmVaPN343qgu3YBmtvE1ZbPmwpVfiw1E1nuVoKLoAZaeaS/1000029395.jpg",
+        "https://cdn.steemitimages.com/DQmQH3w2pCVW1VuyYqGjbSWUzDDoEbLJqKGDQu6g5NqMoJe/1000029393.jpg",
+        "https://cdn.steemitimages.com/DQmPHajQmar1bL1YdChKUHgfRxj7GB9BqRRfo2tjXHc2Sjn/1000029390.jpg",
+        "https://cdn.steemitimages.com/DQmPHz1E9dnwTYaLSWgo3nvZMBaqMfB1UmnQnJm7dWi2jun/1000029386.jpg"
     ],
     'eth': [
         "https://cdn.steemitimages.com/DQmfUQ1SwxLTQQdizA4REugtndjMDp11kqQ7y5jjEVRmjCq/1000027729.jpg",
@@ -415,7 +415,7 @@ print(f"✅ Matching Permlink Slug compiled: '{post_permlink}'")
 # Compile the final Markdown text array payload
 body_lines = [
     f"\n**{formatted_date}**  🕘 *{timestamp_utc}*\n",
-    "Latest Prices:\n",
+    "Latest Prices (The Big Five):\n",
     format_row('btc'),
     format_row('eth'),
     format_row('bnb'),
