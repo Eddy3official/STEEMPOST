@@ -23,7 +23,7 @@ time.sleep(random_delay_seconds)
 # ==========================================
 MY_ACCOUNT = "blog.god"  
 TARGET_COMMUNITY = "hive-129948"  
-CUSTOM_TAGS = ["art", "crypto", "blog", "trading", "blockchain", "report"]
+CUSTOM_TAGS = ["art", "crypto", "cartoon", "trading", "blockchain", "comic"]
 CRYPTO_KEYWORDS = ["crypto", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "bnb", "trading", "blockchain"]
 
 # Ultra-low RC asset images mapped explicitly (Per coin asset category)
@@ -36,18 +36,18 @@ IMAGE_MATRIX = {
         "https://cdn.steemitimages.com/DQmPHz1E9dnwTYaLSWgo3nvZMBaqMfB1UmnQnJm7dWi2jun/1000029386.jpg"
     ],
     'eth': [
-        "https://cdn.steemitimages.com/DQmfUQ1SwxLTQQdizA4REugtndjMDp11kqQ7y5jjEVRmjCq/1000027729.jpg",
-        "https://cdn.steemitimages.com/DQmNbTtqvFoiDwHvxVsSo3AfDgK6YnAnvnndpB52ei5o4cg/1000024873.jpg", 
-        "https://cdn.steemitimages.com/DQmXZayvTu9PqYiWRX9s6ok2GYHj4ZVJ2ZzaJbeSQG1UZtd/1000024874.jpg", 
-        "https://cdn.steemitimages.com/DQmeBPMY49p98JYbZqrUHahqyvWiZwTmzKLDH3DqRjK2mej/1000024876.jpg", 
-        "https://cdn.steemitimages.com/DQmRagxTVdy3HweodDjUN1Q3qgXUZgvTpdLBpJR7tJ3VfJS/1000024875.jpg" 
+        "https://cdn.steemitimages.com/DQmZjXLV4tVxf4eA1kTp7SD8aA4tHPfFB5icaME3S75Vwrq/1000029410.jpg",
+        "https://cdn.steemitimages.com/DQmbVoqzAaULiLwmqiKzoPHXi3kHm7Fr2v47PcgCEa6Edhw/1000029421.jpg", 
+        "https://cdn.steemitimages.com/DQmXcaVxWDFCWH9tof911Rn3RJhMvSsybqya5Nzhg5gBNGN/1000029423.jpg", 
+        "https://cdn.steemitimages.com/DQmVTaJt1KN9hHtYc5uoP1xCVcb1GESZPxMtBFQpnNrvHtF/1000029425.jpg", 
+        "https://cdn.steemitimages.com/DQmYDnA988Xt3oeqoKeXMNRsU3PcnNHviXhy6698tfnsku2/1000029427.jpg" 
     ],
     'bnb': [
-        "https://cdn.steemitimages.com/DQmPgAypoxC2jmDyy4zw9e5UzeUzAsxbZbucSstZfP3hrMv/1000027733.jpg",
-        "https://cdn.steemitimages.com/DQmSVx5EisX8kQfv516tTnsuw8da9PWLYSgvMQxpNLZkCFc/1000024880.jpg", 
-        "https://cdn.steemitimages.com/DQmRrPFPJ1gP3SLEv5deYRVtJzHr31iBVXiCFvsBPVnqtHZ/1000024879.jpg", 
-        "https://cdn.steemitimages.com/DQmPSX1xN4vEQerdyD147mmhCvxX4KpcU4brJXeuhN978qa/1000024878.jpg", 
-        "https://cdn.steemitimages.com/DQmX4F4oZtAYv8TXvoripjNxzw1YWn5BnGwb3DJCJHpFmRC/1000024877.jpg" 
+        "https://cdn.steemitimages.com/DQmTq22vA2EVNZnL5jrcJkDBvNaHysT3ohvdxTAKpT42hG3/1000029429.jpg",
+        "https://cdn.steemitimages.com/DQmStbAMAUdzKgmEqRvgszFHKsk9SyXAcC3KknByF5hZhQ3/1000029431.jpg", 
+        "https://cdn.steemitimages.com/DQmVQWeZxqyi5WR83p8xoNXeSzRqWRfHRJsAJ56H98wBuzW/1000029433.jpg", 
+        "https://cdn.steemitimages.com/DQmcWi98oNduVyTG68DPW1SAEMy79JUd3pws7pGYteKCq69/1000029435.jpg", 
+        "https://cdn.steemitimages.com/DQmWoYCSYxFa6V7bTXxukHqGNUjm1Wp7UfCxPfwbEGTW9dB/1000029437.jpg" 
     ],
     'xrp': [
         "https://cdn.steemitimages.com/DQmSHYqqigFCfojABxSwVxx95og78r5Zf5vBcRov7UjNm3X/1000027735.jpg",
