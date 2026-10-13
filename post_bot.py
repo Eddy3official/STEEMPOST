@@ -24,7 +24,7 @@ time.sleep(random_delay_seconds)
 MY_ACCOUNT = "blog.god"  
 TARGET_COMMUNITY = "hive-129948"  
 CUSTOM_TAGS = ["art", "crypto", "cartoon", "trading", "blockchain", "comic"]
-CRYPTO_KEYWORDS = ["crypto", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "bnb", "trading", "blockchain"]
+CRYPTO_KEYWORDS = ["crypto", "hodl", "usdt", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "bnb", "trading", "blockchain"]
 
 # Ultra-low RC asset images mapped explicitly (Per coin asset category)
 IMAGE_MATRIX = {
@@ -238,36 +238,27 @@ if not data_acquired:
 # 4. SCAN BLOCKCHAIN FOR CRYPTO POST AUTHOR
 # ==========================================
 def scan_latest_crypto_post(blockchain_instance):
-    """
-    Scans the latest global history feed for the newest post containing 
-    a crypto related hashtag, or crypto words within the title or body.
-    Returns a dict with author and permlink, or None.
-    """
-    print("Scanning blockchain history for the latest crypto-related post...")
+    print("Scanning blockchain history for the latest crypto-related post (tags only)...")
     try:
         query = {"limit": 50, "tag": ""}
         discussions = Discussions_by_created(query, blockchain_instance=blockchain_instance)
-        
+        keyword_set = set(k.lower() for k in CRYPTO_KEYWORDS)
+
         for post in discussions:
             author = post.get("author")
-            permlink = post.get("permlink")  # Grab the permlink slug
-            title = post.get("title", "").lower()
-            body = post.get("body", "").lower()
+            permlink = post.get("permlink")
             tags = [t.lower() for t in post.get("tags", [])]
-            
-            # Avoid tagging yourself
+
             if author == MY_ACCOUNT:
                 continue
-                
-            # Match condition
-            for keyword in CRYPTO_KEYWORDS:
-                if keyword in tags or keyword in title or keyword in body:
-                    print(f"Found matching crypto post by @{author} (Permlink: {permlink})")
-                    return {"author": author, "permlink": permlink}
-                    
+
+            if keyword_set.intersection(tags):
+                print(f"Found matching crypto post by @{author} (Permlink: {permlink})")
+                return {"author": author, "permlink": permlink}
+
     except Exception as scan_err:
         print(f"Warning: Exception encountered during blockchain analysis scan: {scan_err}")
-    
+
     return None
 
 
