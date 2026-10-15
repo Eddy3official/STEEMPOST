@@ -414,7 +414,7 @@ body_lines = [
     format_row('sol'),
     f"\n🔺**Top Gainer:** {top_coin_key.upper()}\n",
     f"![{selected_prefix}]({selected_display_image})",
-    f'<div class="footer">\n  <div class="pull-left">\n    Follow @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  Layout by @blog.god\n</div>'
+    f'<div class="footer">\n  <div class="pull-left">\n    Author: @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  ©EGM\n</div>'
 ]
 
 # Only inject the shout-out if a valid post was successfully scanned
