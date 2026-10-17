@@ -59,7 +59,8 @@ IMAGE_MATRIX = {
         "https://cdn.steemitimages.com/DQmWoYCSYxFa6V7bTXxukHqGNUjm1Wp7UfCxPfwbEGTW9dB/1000029437.jpg",
         "https://cdn.steemitimages.com/DQmRbVyrWDVHNNZhtEh1UuiK5uwka3vFf31DC53u3LHe9SX/1000030955.jpg",
         "https://cdn.steemitimages.com/DQmWiqcPMPRCT7JiTJy331t5pmYn9DfxhjCgjWi1Z1hfYos/1000030953.jpg",
-        "https://cdn.steemitimages.com/DQmVhMs7PGGqFfrZorU7rTkkhakBCAuiEoSAtiJTeQ8akPu/1000030949.jpg"
+        "https://cdn.steemitimages.com/DQmVhMs7PGGqFfrZorU7rTkkhakBCAuiEoSAtiJTeQ8akPu/1000030949.jpg",
+        "https://cdn.steemitimages.com/DQmbSLsDRSVYFiyRxpkGtaTr53M8wfRrcNyhFpYSmzAd3qr/1000030958.jpg"
     ],
     'xrp': [
         "https://cdn.steemitimages.com/DQmYp1cCTySxFcrt5G7etnH89vLYscGoCFm9BmqenCqgQVa/1000029440.jpg",
