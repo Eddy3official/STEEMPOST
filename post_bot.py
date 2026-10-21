@@ -23,7 +23,7 @@ time.sleep(random_delay_seconds)
 # ==========================================
 MY_ACCOUNT = "blog.god"  
 TARGET_COMMUNITY = "hive-129948"  
-CUSTOM_TAGS = ["art", "crypto", "cartoon", "trading", "blockchain", "comic"]
+CUSTOM_TAGS = ["art", "crypto", "h4lab", "kr", "blockchain", "krsuccess"]
 CRYPTO_KEYWORDS = ["crypto", "hodl", "usdt", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "bnb", "trading", "blockchain"]
 
 # Ultra-low RC asset images mapped explicitly (Per coin asset category)
@@ -440,7 +440,7 @@ body_lines = [
     format_row('sol'),
     f"\n🔺**Top Gainer:** {top_coin_key.upper()}\n",
     f"![{selected_prefix}]({selected_display_image})",
-    f'<div class="footer">\n  <div class="pull-left">\n    Author: @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  ©EGM\n</div>'
+    f'<div class="footer">\n  <div class="pull-left">\n    Author: @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  Layout provided by [Steemit Enhancer hommage](https://chromewebstore.google.com/detail/empty-title/gepddagaajclednflogimfmpoejjkcnj) by ayogom\n</div>'
 ]
 
 # Only inject the shout-out if a valid post was successfully scanned
