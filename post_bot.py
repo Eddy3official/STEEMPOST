@@ -432,6 +432,8 @@ print(f"✅ Matching Permlink Slug compiled: '{post_permlink}'")
 # Compile the final Markdown text array payload
 body_lines = [
     f"\n**{formatted_date}**  🕘 *{timestamp_utc}*\n",
+    "*Layout provided by [Steemit Enhancer hommage](https://chromewebstore.google.com/detail/empty-title/gepddagaajclednflogimfmpoejjkcnj) by ayogom*\n",
+    "⚠️FOR INFORMATION PURPOSES ONLY. NOT INVESTMENT ADVICE.\n",
     "Latest Prices (The Big Five):\n",
     format_row('btc'),
     format_row('eth'),
@@ -440,7 +442,7 @@ body_lines = [
     format_row('sol'),
     f"\n🔺**Top Gainer:** {top_coin_key.upper()}\n",
     f"![{selected_prefix}]({selected_display_image})",
-    f'<div class="footer">\n  <div class="pull-left">\n    Author: @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  Layout provided by [Steemit Enhancer hommage](https://chromewebstore.google.com/detail/empty-title/gepddagaajclednflogimfmpoejjkcnj) by ayogom\n</div>'
+    f'<div class="footer">\n  <div class="pull-left">\n    Author: @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  ©EGM 2016 - 2036\n</div>'
 ]
 
 # Only inject the shout-out if a valid post was successfully scanned
