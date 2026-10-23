@@ -30,6 +30,9 @@ CRYPTO_KEYWORDS = ["crypto", "hodl", "usdt", "cryptocurrency", "bitcoin", "btc",
 IMAGE_MATRIX = {
     'btc': [
         "https://cdn.steemitimages.com/DQmdpwMbaNCXxsNitesDjWo9HRWFsJq86yTK9seJbofEV7Y/1000029397.jpg",
+        "https://cdn.steemitimages.com/DQmUdLFrXh6nc1aercDqaZ6aLYYyfXMKvuTRAosSCEeMxH5/1000032144.jpg",
+        "https://cdn.steemitimages.com/DQmbwGRdZN8ztqe8Xp8wSTtsg3CfkDE6K4Lp8s7arR2K8EL/1000032146.jpg",
+        "https://cdn.steemitimages.com/DQmVAxgGzRJ3WmnWPF1XGmVnJisVspxq6h6yrrkVtPdTmKp/1000032148.jpg",
         "https://cdn.steemitimages.com/DQmVaPN343qgu3YBmtvE1ZbPmwpVfiw1E1nuVoKLoAZaeaS/1000029395.jpg",
         "https://cdn.steemitimages.com/DQmQH3w2pCVW1VuyYqGjbSWUzDDoEbLJqKGDQu6g5NqMoJe/1000029393.jpg",
         "https://cdn.steemitimages.com/DQmPHajQmar1bL1YdChKUHgfRxj7GB9BqRRfo2tjXHc2Sjn/1000029390.jpg",
@@ -42,7 +45,9 @@ IMAGE_MATRIX = {
     ],
     'eth': [
         "https://cdn.steemitimages.com/DQmZjXLV4tVxf4eA1kTp7SD8aA4tHPfFB5icaME3S75Vwrq/1000029410.jpg",
-        "https://cdn.steemitimages.com/DQmbVoqzAaULiLwmqiKzoPHXi3kHm7Fr2v47PcgCEa6Edhw/1000029421.jpg", 
+        "https://cdn.steemitimages.com/DQmbVoqzAaULiLwmqiKzoPHXi3kHm7Fr2v47PcgCEa6Edhw/1000029421.jpg",
+        "https://cdn.steemitimages.com/DQme94D5zNRQLaV8KVHNWjCguuFnoi7c1Ksqv8T5SM2S1Ry/1000032152.jpg",
+        "https://cdn.steemitimages.com/DQmduBC1deytMSNfK7PDbrvG6rMBHHNr3msJbQbhVgEXjyZ/1000032156.jpg",
         "https://cdn.steemitimages.com/DQmXcaVxWDFCWH9tof911Rn3RJhMvSsybqya5Nzhg5gBNGN/1000029423.jpg", 
         "https://cdn.steemitimages.com/DQmVTaJt1KN9hHtYc5uoP1xCVcb1GESZPxMtBFQpnNrvHtF/1000029425.jpg", 
         "https://cdn.steemitimages.com/DQmYDnA988Xt3oeqoKeXMNRsU3PcnNHviXhy6698tfnsku2/1000029427.jpg",
@@ -55,7 +60,8 @@ IMAGE_MATRIX = {
     ],
     'bnb': [
         "https://cdn.steemitimages.com/DQmTq22vA2EVNZnL5jrcJkDBvNaHysT3ohvdxTAKpT42hG3/1000029429.jpg",
-        "https://cdn.steemitimages.com/DQmStbAMAUdzKgmEqRvgszFHKsk9SyXAcC3KknByF5hZhQ3/1000029431.jpg", 
+        "https://cdn.steemitimages.com/DQmStbAMAUdzKgmEqRvgszFHKsk9SyXAcC3KknByF5hZhQ3/1000029431.jpg",
+        "https://cdn.steemitimages.com/DQma2eEc4b8XC7UDnayeubdcxRcWGvsbTANrBsBdiwkLAjQ/1000032187.jpg",
         "https://cdn.steemitimages.com/DQmVQWeZxqyi5WR83p8xoNXeSzRqWRfHRJsAJ56H98wBuzW/1000029433.jpg", 
         "https://cdn.steemitimages.com/DQmcWi98oNduVyTG68DPW1SAEMy79JUd3pws7pGYteKCq69/1000029435.jpg", 
         "https://cdn.steemitimages.com/DQmWoYCSYxFa6V7bTXxukHqGNUjm1Wp7UfCxPfwbEGTW9dB/1000029437.jpg",
@@ -68,7 +74,9 @@ IMAGE_MATRIX = {
     'xrp': [
         "https://cdn.steemitimages.com/DQmYp1cCTySxFcrt5G7etnH89vLYscGoCFm9BmqenCqgQVa/1000029440.jpg",
         "https://cdn.steemitimages.com/DQmXaVtwec72GEvQS32VccxS1ep6kYzuosVXADMtQdM5zb3/1000029443.jpg", 
-        "https://cdn.steemitimages.com/DQmRHWVy88P8ZEEbNvfPC1sXrhfDZSvamQeNP9rXyw6u5uk/1000029445.jpg", 
+        "https://cdn.steemitimages.com/DQmRHWVy88P8ZEEbNvfPC1sXrhfDZSvamQeNP9rXyw6u5uk/1000029445.jpg",
+        "https://cdn.steemitimages.com/DQmdfZWDMgB8BZN9VmmqbsTt65YgBGw7dx6Ag5maYbWjK2d/1000032181.jpg",
+        "https://cdn.steemitimages.com/DQmcZyYaS87mKzp5QXsDKxqxZcCHUrAtJ7Mtmp8Sc8TH1K9/1000032177.jpg",
         "https://cdn.steemitimages.com/DQmUUx52nxDwi5QrYdYhouTmi2mZDng7i85ic2ceUbZNpLZ/1000029447.jpg", 
         "https://cdn.steemitimages.com/DQmbW54JsnnShgb5gx4YxoYdFghgZoo6QmpFGPLL6MK1ER7/1000029449.jpg",
         "https://cdn.steemitimages.com/DQmeMyqefSn7iKiBck34ZWdVs1mjRJu9aNa9fESB4BVs4yj/1000030946.jpg",
@@ -80,6 +88,8 @@ IMAGE_MATRIX = {
     'sol': [
         "https://cdn.steemitimages.com/DQmVHyEguXPkzKuXA3tPhwFzsYSMeQGcjUsSdNkujphBcyV/1000029451.jpg",
         "https://cdn.steemitimages.com/DQmUXQxtLxy1w91ehztQRZgjYJoL6cAwBMkhhGCP2W3D74t/1000029453.jpg",
+        "https://cdn.steemitimages.com/DQmZ11GUCfe7bWPwGvSLcN11RWcAag4ZFEfN7tsLgPyX6ir/1000032172.jpg",
+        "https://cdn.steemitimages.com/DQmPBBUGjsdvqSqQnjefLWxR6LRoq8fUHwqh6YxXgZvT7zd/1000032161.jpg",
         "https://cdn.steemitimages.com/DQmSvm4ahxdyRgsbong2epeeatfseDZ14bbuqm2dZFWLucq/1000029455.jpg",
         "https://cdn.steemitimages.com/DQmQ222Kvnxd2ReLUKfPxvYr85QEFjwGmMyhW5Kaf6dypB3/1000029459.jpg",
         "https://cdn.steemitimages.com/DQmPgFc5UokJA5DvuxshoVdnJYrqYQW3pwLYb3TniELLgZm/1000029461.jpg",
