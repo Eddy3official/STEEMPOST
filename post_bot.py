@@ -22,8 +22,8 @@ time.sleep(random_delay_seconds)
 # 1. CONFIGURATION VARIABLES
 # ==========================================
 MY_ACCOUNT = "blog.god"  
-TARGET_COMMUNITY = "hive-183959"  
-CUSTOM_TAGS = ["art", "crypto", "h4lab", "kr", "avle", "krsuccess"]
+TARGET_COMMUNITY = "hive-129948"  
+CUSTOM_TAGS = ["art", "crypto", "blockchain", "kr", "blog", "bangla"]
 CRYPTO_KEYWORDS = ["crypto", "hodl", "usdt", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "kr", "coingeco", "avle", "bnb", "trading", "blockchain"]
 
 # Ultra-low RC asset images mapped explicitly (Per coin asset category)
