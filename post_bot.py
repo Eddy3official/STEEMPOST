@@ -23,8 +23,8 @@ time.sleep(random_delay_seconds)
 # ==========================================
 MY_ACCOUNT = "blog.god"  
 TARGET_COMMUNITY = "hive-129948"  
-CUSTOM_TAGS = ["art", "crypto", "blockchain", "kr", "blog", "bangla"]
-CRYPTO_KEYWORDS = ["crypto", "hodl", "usdt", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "kr", "coingeco", "avle", "bnb", "trading", "blockchain"]
+CUSTOM_TAGS = ["art", "crypto", "blockchain", "blog"]
+CRYPTO_KEYWORDS = ["crypto", "cryptocurrency"]
 
 # Ultra-low RC asset images mapped explicitly (Per coin asset category)
 IMAGE_MATRIX = {
@@ -464,7 +464,7 @@ if scanned_post_data:
     
     # Format the shout-out line with an embedded hyperlink to the post
     shoutout_text = (
-        f"A big shout-out to @{author} for keeping up with the crypto space today! "
+        f"A big shout-out to @{author}. "
         f"Check out their latest update here: **[{permlink}]({steemit_url})**\n"
     )
     
