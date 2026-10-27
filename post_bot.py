@@ -1,7 +1,7 @@
 import os
 import datetime
-import time
-import random
+import time 
+import random 
 import json
 import urllib.request
 from beem import Steem
@@ -21,10 +21,10 @@ time.sleep(random_delay_seconds)
 # ==========================================
 # 1. CONFIGURATION VARIABLES
 # ==========================================
-MY_ACCOUNT = "blog.god"
-TARGET_COMMUNITY = "hive-129948"
-CUSTOM_TAGS = ["steemexclusive", "abb-powerup"]
-CRYPTO_KEYWORDS = ["crypto", "cryptocurrency"]
+MY_ACCOUNT = "blog.god"  
+TARGET_COMMUNITY = "hive-183959"  
+CUSTOM_TAGS = ["art", "crypto", "h4lab", "kr", "avle", "krsuccess"]
+CRYPTO_KEYWORDS = ["crypto", "hodl", "usdt", "cryptocurrency", "bitcoin", "btc", "ethereum", "eth", "solana", "sol", "xrp", "ripple", "binance", "kr", "coingeco", "avle", "bnb", "trading", "blockchain"]
 
 # Ultra-low RC asset images mapped explicitly (Per coin asset category)
 IMAGE_MATRIX = {
@@ -48,21 +48,22 @@ IMAGE_MATRIX = {
         "https://cdn.steemitimages.com/DQmbVoqzAaULiLwmqiKzoPHXi3kHm7Fr2v47PcgCEa6Edhw/1000029421.jpg",
         "https://cdn.steemitimages.com/DQme94D5zNRQLaV8KVHNWjCguuFnoi7c1Ksqv8T5SM2S1Ry/1000032152.jpg",
         "https://cdn.steemitimages.com/DQmduBC1deytMSNfK7PDbrvG6rMBHHNr3msJbQbhVgEXjyZ/1000032156.jpg",
-        "https://cdn.steemitimages.com/DQmXcaVxWDFCWH9tof911Rn3RJhMvSsybqya5Nzhg5gBNGN/1000029423.jpg",
-        "https://cdn.steemitimages.com/DQmVTaJt1KN9hHtYc5uoP1xCVcb1GESZPxMtBFQpnNrvHtF/1000029425.jpg",
+        "https://cdn.steemitimages.com/DQmXcaVxWDFCWH9tof911Rn3RJhMvSsybqya5Nzhg5gBNGN/1000029423.jpg", 
+        "https://cdn.steemitimages.com/DQmVTaJt1KN9hHtYc5uoP1xCVcb1GESZPxMtBFQpnNrvHtF/1000029425.jpg", 
         "https://cdn.steemitimages.com/DQmYDnA988Xt3oeqoKeXMNRsU3PcnNHviXhy6698tfnsku2/1000029427.jpg",
         "https://cdn.steemitimages.com/DQmaLZ21PdPH4EjE3zxxqi5afqU7k4Ao15rWv5JzrrHpALr/1000030908.jpg",
         "https://cdn.steemitimages.com/DQmUBLfaduMaCNoEEQmJCmizFwLU3kQPM1Su9is5wfon7Tu/1000030910.jpg",
         "https://cdn.steemitimages.com/DQmRMfdbySJSw3mvfuZtkSrqgBHYhbparCTXERuRL6z2h6t/1000030912.jpg",
         "https://cdn.steemitimages.com/DQmQce2rn37Niz67WA9x4mg42sfh3Me71c5Z7DaAohGPmti/1000031471.jpg",
         "https://cdn.steemitimages.com/DQmUmqfpw8mBdWnbHexK3rJXdKpn84fuBE6BZn2X5RypMqS/1000030914.jpg"
+        
     ],
     'bnb': [
         "https://cdn.steemitimages.com/DQmTq22vA2EVNZnL5jrcJkDBvNaHysT3ohvdxTAKpT42hG3/1000029429.jpg",
         "https://cdn.steemitimages.com/DQmStbAMAUdzKgmEqRvgszFHKsk9SyXAcC3KknByF5hZhQ3/1000029431.jpg",
         "https://cdn.steemitimages.com/DQma2eEc4b8XC7UDnayeubdcxRcWGvsbTANrBsBdiwkLAjQ/1000032187.jpg",
-        "https://cdn.steemitimages.com/DQmVQWeZxqyi5WR83p8xoNXeSzRqWRfHRJsAJ56H98wBuzW/1000029433.jpg",
-        "https://cdn.steemitimages.com/DQmcWi98oNduVyTG68DPW1SAEMy79JUd3pws7pGYteKCq69/1000029435.jpg",
+        "https://cdn.steemitimages.com/DQmVQWeZxqyi5WR83p8xoNXeSzRqWRfHRJsAJ56H98wBuzW/1000029433.jpg", 
+        "https://cdn.steemitimages.com/DQmcWi98oNduVyTG68DPW1SAEMy79JUd3pws7pGYteKCq69/1000029435.jpg", 
         "https://cdn.steemitimages.com/DQmWoYCSYxFa6V7bTXxukHqGNUjm1Wp7UfCxPfwbEGTW9dB/1000029437.jpg",
         "https://cdn.steemitimages.com/DQmRbVyrWDVHNNZhtEh1UuiK5uwka3vFf31DC53u3LHe9SX/1000030955.jpg",
         "https://cdn.steemitimages.com/DQmWiqcPMPRCT7JiTJy331t5pmYn9DfxhjCgjWi1Z1hfYos/1000030953.jpg",
@@ -72,11 +73,11 @@ IMAGE_MATRIX = {
     ],
     'xrp': [
         "https://cdn.steemitimages.com/DQmYp1cCTySxFcrt5G7etnH89vLYscGoCFm9BmqenCqgQVa/1000029440.jpg",
-        "https://cdn.steemitimages.com/DQmXaVtwec72GEvQS32VccxS1ep6kYzuosVXADMtQdM5zb3/1000029443.jpg",
+        "https://cdn.steemitimages.com/DQmXaVtwec72GEvQS32VccxS1ep6kYzuosVXADMtQdM5zb3/1000029443.jpg", 
         "https://cdn.steemitimages.com/DQmRHWVy88P8ZEEbNvfPC1sXrhfDZSvamQeNP9rXyw6u5uk/1000029445.jpg",
         "https://cdn.steemitimages.com/DQmdfZWDMgB8BZN9VmmqbsTt65YgBGw7dx6Ag5maYbWjK2d/1000032181.jpg",
         "https://cdn.steemitimages.com/DQmcZyYaS87mKzp5QXsDKxqxZcCHUrAtJ7Mtmp8Sc8TH1K9/1000032177.jpg",
-        "https://cdn.steemitimages.com/DQmUUx52nxDwi5QrYdYhouTmi2mZDng7i85ic2ceUbZNpLZ/1000029447.jpg",
+        "https://cdn.steemitimages.com/DQmUUx52nxDwi5QrYdYhouTmi2mZDng7i85ic2ceUbZNpLZ/1000029447.jpg", 
         "https://cdn.steemitimages.com/DQmbW54JsnnShgb5gx4YxoYdFghgZoo6QmpFGPLL6MK1ER7/1000029449.jpg",
         "https://cdn.steemitimages.com/DQmeMyqefSn7iKiBck34ZWdVs1mjRJu9aNa9fESB4BVs4yj/1000030946.jpg",
         "https://cdn.steemitimages.com/DQmNdoi49zohSZ6JWGUy4pA5npvN5S5MnYH8SCvZCxpLZue/1000030942.jpg",
@@ -104,7 +105,7 @@ IMAGE_MATRIX = {
 # 2. KEY, ENDPOINT & ACCOUNT HEALTH SAFARDS
 # ==========================================
 MY_PRIVATE_POSTING_KEY = os.getenv("STEEM_POSTING_KEY")
-PROXY_URL = "https://steem-proxy.gikunju.workers.dev"
+PROXY_URL = "https://steem-proxy.gikunju.workers.dev"  
 
 if not MY_PRIVATE_POSTING_KEY:
     print("Error: STEEM_POSTING_KEY secret is missing!")
@@ -133,6 +134,7 @@ market_data = {
     'sol': {'name': 'Solana', 'price': 0.0, 'change': 0.0}
 }
 
+
 # ==========================================
 # 3. CASCADING API DATA EXTRACTION LAYER
 # ==========================================
@@ -142,6 +144,7 @@ data_acquired = False
 if not data_acquired:
     print("Primary Pipeline: Fetching live data from CoinGecko Public API...")
     try:
+        # Fully qualified API endpoint mapping your target 5 assets
         gecko_url = (
             "https://api.coingecko.com/api/v3/simple/price"
             "?ids=bitcoin,ethereum,binancecoin,ripple,solana"
@@ -187,6 +190,7 @@ if not data_acquired:
 # --- SOURCE 2: BINANCE PUBLIC WEBSOCKET ---
 if not data_acquired:
     print("Secondary Pipeline: Fetching live data from Binance WebSocket...")
+
     try:
         binance_symbols = {
             "BTCUSDT": "btc",
@@ -244,9 +248,9 @@ if not data_acquired:
         req = urllib.request.Request(paprika_url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=12) as response:
             raw_json = json.loads(response.read().decode())
-
+            
             mapping = {
-                'btc-bitcoin': 'btc', 'eth-ethereum': 'eth',
+                'btc-bitcoin': 'btc', 'eth-ethereum': 'eth', 
                 'bnb-binance-coin': 'bnb', 'xrp-xrp': 'xrp', 'sol-solana': 'sol'
             }
             for item in raw_json:
@@ -254,7 +258,7 @@ if not data_acquired:
                 if sym:
                     market_data[sym]['price'] = float(item['quotes']['USD']['price'])
                     market_data[sym]['change'] = float(item['quotes']['USD']['percent_change_24h'])
-
+            
             if all(coin["price"] > 0 for coin in market_data.values()):
                 data_acquired = True
                 print("CoinPaprika ingestion complete.")
@@ -264,7 +268,7 @@ if not data_acquired:
 # --- ABSOLUTE SAFETY BREAK ---
 if not data_acquired:
     print("Safeguard Halt: Live market data unreachable. Terminating deployment loop to prevent posting old data.")
-    exit(0)
+    exit(0) # Halts context cleanly without displaying system error codes on GitHub
 
 # ==========================================
 # 4. SCAN BLOCKCHAIN FOR CRYPTO POST AUTHOR
@@ -293,6 +297,7 @@ def scan_latest_crypto_post(blockchain_instance):
 
     return None
 
+
 # ==========================================
 # 5. STRUCTURE, SELECTION & LOW-RC TEXT COMPILATION
 # ==========================================
@@ -304,7 +309,7 @@ top_performer = market_data[top_coin_key]
 selected_display_image = random.choice(IMAGE_MATRIX[top_coin_key])
 print(f"🥇 Top Performer: {top_performer['name']} ({top_coin_key.upper()}) at {top_performer['change']:.2f}%. Selected image link variant.")
 
-now_eat = datetime.datetime.utcnow() + datetime.timedelta(hours=3)
+now_eat = datetime.datetime.utcnow() + datetime.timedelta(hours=3) # UTC to EAT
 
 def get_ordinal_suffix(day):
     if 11 <= day <= 13:
@@ -319,111 +324,117 @@ timestamp_utc = now_eat.strftime('%H:%M EAT')
 def format_row(key):
     coin = market_data[key]
     emoji = "🔺 +" if coin['change'] >= 0 else "🔻"
+    # Added :.2f to format numbers >= 1 with exactly 2 decimal places
     price_str = f"${coin['price']:,.2f}" if coin['price'] >= 1 else f"${coin['price']:.4f}"
     return f"* 🪙 **{coin['name']} ({key.upper()}):** {price_str} | {emoji}{coin['change']:.2f}%"
 
 # A pool of unique human-written title prefixes to break structural repetitions
 title_variations = [
-    "ক্রিপ্টো বাজার আজ পাগলাটে!",
-    "ক্রিপ্টো বিশ্বে কী হচ্ছে?",
-    "BTC, XRP, ETH, BNB এবং SOLANA সব বদলে যাচ্ছে!",
-    "ক্রিপ্টো বাজারের দাম আপডেট",
-    "এখন কি ক্রিপ্টো ব্রেকআউট হচ্ছে?",
-    "দৈনিক কমপ্লিট ক্রিপ্টো সম্পদ রিপোর্ট",
-    "আজ ক্রিপ্টো বাজার কোন দিকে যাচ্ছে?",
-    "আজকের ক্রিপ্টো চলাচল এক নজরে",
-    "ক্রিপ্টো দাম আজ দ্রুত বদলাচ্ছে!",
-    "আপনার অপরিহার্য দৈনিক ক্রিপ্টো বাজার ইনজেস্ট",
-    "শীর্ষ ক্রিপ্টো কয়েনে বড় অস্থিরতা!",
-    "আজ ক্রিপ্টো বিশ্বে ঢুকে দেখুন",
-    "শীর্ষ ক্রিপ্টো কি গতি পাচ্ছে?",
-    "আজকের ক্রিপ্টো বাজারের কার্যকলাপ নিয়ে বিশ্লেষণ",
-    "বিগ ৫ ক্রিপ্টো বাজারে কাঁপন তুলছে!",
-    "আজকের ক্রিপ্টো দামের দ্রুত বর্ণনা",
-    "ক্রিপ্টো স্পেসে আজ এক আকর্ষণীয় দিন!",
-    "আজকের শীর্ষ ক্রিপ্টো কারেন্সি ট্র্যাকিং",
-    "ক্রিপ্টো বাজারে সাম্প্রতিক পরিবর্তন",
-    "শীর্ষ ৫ ক্রিপ্টো কয়েন আজ কোথায় দাঁড়িয়ে?",
-    "ডিজিটাল সোনা নড়ে উঠেছে: আজকের বিটকয়েন ও অল্টকয়েনের কাজ",
-    "বিকেন্দ্রীভূত বাজারে আগুন—আপনার ক্রিপ্টো আপডেট",
-    "ব্লকচেইন সর্জ: আজ কোন কয়েন নেতৃত্ব দিচ্ছে?",
-    "অল্টসিজন সিগন্যাল? শীর্ষ ৫ পারফর্মার ট্র্যাকিং",
-    "ক্রিপ্টো মোমেন্টাম চেক: রিয়েল-টাইম মার্কেট স্ন্যাপশট",
-    "ডিফাই প্রভাব: বাজার কীভাবে বদলে যাচ্ছে এখন",
-    "হোল্ডারদের গাইড: আজকের সবচেয়ে অস্থির ডিজিটাল সম্পদ",
-    "বিটকয়েন থেকে সোলানা: বাজারের চলাচল ব্যাখ্যা",
-    "টোকেনোমিকসের অগ্রগতি: লাইভ ক্রিপ্টো মূল্য বিশ্লেষণ",
-    "সাপ্তাহিক ক্রিপ্টো পালস: বড় পরিবর্তন ঘটছে",
-    "স্মার্ট মানি এলার্ট: ক্রিপ্টো দাম কোথায় যাচ্ছে",
-    "লেয়ার ২ বনাম লেয়ার ১: আজ কে জিতছে?",
-    "ডেটা খনন: আপনার দৈনিক ব্লকচেইন মার্কেট ব্রিফ",
-    "হোয়েল ওয়াচ: আজকের ক্রিপ্টোতে বড় বদল ট্র্যাকিং",
-    "বুলের হ্যান্ডবুক: অপরিহার্য দৈনিক ক্রিপ্টো মেট্রিকস",
-    "স্টেকিং স্পটলাইট: বাজারে ঢেউ তুলছে এমন কয়েন",
-    "মেমপুল মিটার: রিয়েল-টাইম ক্রিপ্টো মার্কেট ইনসাইট",
-    "বেয়ার কেস ও বুল কেস: আজকের শীর্ষ ক্রিপ্টো নিয়ে",
-    "এক্সচেঞ্জ ফ্লো: আজকের দাম চলাচল বোঝা",
-    "বুলিশ সিগন্যাল: ক্রিপ্টো কি লিফটঅফের জন্য প্রস্তুত?",
-    "বিটকয়েন ব্রেকআউট ওয়াচ: বাজার দ্রুত এগিয়ে যাচ্ছে",
-    "অস্থিরতা স্পাইক: অল্টকয়েন আজ নেতৃত্ব দিচ্ছে",
-    "ক্রিপ্টো হিটম্যাপ: ডিজিটাল বাজারের বড় মুভার",
-    "স্মার্ট ইনভেস্টরের দৈনিক ক্রিপ্টো ট্রেন্ড রিপোর্ট",
-    "ইথেরিয়াম পালস: বুল রান কি আবার ফিরে এসেছে?",
-    "চেইনের সিগন্যাল: ক্রিপ্টো ট্রেডারদের কী জানা দরকার",
-    "চলমান শীর্ষ কয়েন: নতুন মার্কেট স্ন্যাপশট",
-    "বিটকয়েন, ইথেরিয়াম এবং বাকি দল",
-    "দৈনিক ক্রিপ্টো রাশ: জয়ী ও হারানো",
-    "মার্কেট মোমেন্টাম ওয়াচ: ক্রিপ্টো দাম বদলাচ্ছে",
-    "যখন ক্রিপ্টো গরম হয়: আজকের সবচেয়ে বড় গেইনার",
-    "ক্রিপ্টো সাইকেলের ভেতরে: আসলেই কী ঘটছে?",
-    "নতুন উচ্চতা নাকি ফেকআউট? আজকের চলাচল বিশ্লেষণ",
-    "পরের ক্রিপ্টো তরঙ্গ: কোন কয়েন গরম হচ্ছে?",
-    "সাপ্তাহিক ক্রিপ্টো ওয়াচ: দাম চলাচল সবার ওপরে",
-    "অন-চেইন সিগন্যাল: বাজার কী বলছে",
-    "রিস্ক অন, রিস্ক অফ: ক্রিপ্টো আবার নড়ছে",
-    "সবচেয়ে বড় মুভার: দ্রুত ক্রিপ্টো মার্কেট রাউন্ডআপ",
-    "বড় মুভ, বড় চার্ট: আজকের ক্রিপ্টো নেতারা",
-    "যখন বিটকয়েন নড়ে, অল্টকয়েনও সঙ্গ নেয়",
-    "ক্রিপ্টো লাভ-লোকসান: দৈনিক ব্রেকডাউন",
-    "মার্কেটের পালস: শীর্ষ টোকেনগুলোর দ্রুত চিত্র",
-    "তাজা ক্রিপ্টো ডেটা: দৈনিক মার্কেট এনার্জির ঝলক",
-    "ডিজিটাল সম্পদের লেজার: আজ কী বদলেছে?",
-    "ট্রেন্ড ওয়াচ: ক্রিপ্টো দাম দ্রুত রি-প্রাইজ হচ্ছে",
-    "মোমেন্টাম ইন মোশন: শীর্ষ কয়েন নিয়ে ঘনিষ্ঠ গল্প",
-    "চেইন রিঅ্যাকশন: ক্রিপ্টো আজ কোন দিকে যাচ্ছে",
-    "ডিরেকশনাল বায়াস: কোন ক্রিপ্টো সম্পদ নেতৃত্ব দিচ্ছে?",
-    "শীর্ষ ক্রিপ্টো মুভার: এড়িয়ে যাওয়ার মতো দাম চলাচল",
-    "দৈনিক মার্কেট ফুয়েল: আজকের সবচেয়ে বড় ক্রিপ্টো গল্প",
-    "মুনশট ওয়াচ: কোন কয়েন সাগরে এগিয়ে যাচ্ছে?",
-    "ক্রিপ্টো পালস: ট্রেডিং অ্যাকটিভিটি তৈরি হচ্ছে",
-    "মার্কেট রোটেশন: কোন কয়েন নেতৃত্ব নিচ্ছে?",
-    "ক্রিপ্টোতে রোদ্দুর দিন: লাভ, লোকসান ও ব্রেকআউট",
-    "সাপ্তাহিক ক্রিপ্টো ওয়াচ: বাজার গঠনকারী ট্রেন্ড",
-    "বিটকয়েন ও বন্ধুরা: আজকের চলাচল এক নজরে",
-    "ক্রিপ্টো ল্যাডার: আজ কে সবচেয়ে উপরে উঠছে?",
-    "প্রাইস একশন রিভিউ: আজকের শীর্ষ ডিজিটাল সম্পদ",
-    "বিগ ৫-এর বিশ্লেষণ: ক্রিপ্টো বিজয়ী ও হারানো",
-    "ক্রিপ্টো বোর্ড নড়ছে: দ্রুত মার্কেট আপডেট",
-    "বড় ভলিউম, বড় প্রশ্ন: ক্রিপ্টো কী বলছে",
-    "বুলিশ প্রেসার: কোন কয়েন র্যালির নেতৃত্ব দিচ্ছে?",
-    "তাজা ক্রিপ্টো সিগন্যাল: বাজার সক্রিয় হচ্ছে",
-    "বিটকয়েন থেকে সোলানা: আজকের শীর্ষ কয়েনের গল্প",
-    "ট্রেডিং দ্য টেপ: আজকের সবচেয়ে বড় ক্রিপ্টো মুভ",
-    "প্রধান কয়েনগুলো কথা বলছে: এর অর্থ কী",
-    "ক্রিপ্টো বাজার আবার গরম হচ্ছে: কী দেখবেন"
+    "The Crypto Market is Crazy Today!",
+    "What's Happening On The Crypto World?",
+    "BTC, XRP, ETH, BNB And SOLANA Are Moving!",
+    "Crypto Market Prices Update",
+    "Is a Crypto Breakout Happening Right Now?",
+    "The Complete Daily Crypto Asset Report",
+    "Where is the Crypto Market Heading Today?",
+    "A Quick Look at Today's Crypto Movements",
+    "Crypto Prices Are Shifting Fast Today!",
+    "Your Essential Daily Crypto Market Ingest",
+    "Major Volatility Hitting Top Crypto Coins!",
+    "Checking In On The Crypto World Today",
+    "Are the Top Cryptos Gaining Momentum?",
+    "Unpacking Today's Crypto Market Action",
+    "The Big 5 Cryptos Are Shaking Up the Market!",
+    "A Quick Breakdown of Today's Crypto Prices",
+    "An Interesting Day in the Crypto Space!",
+    "Tracking Today's Top Cryptocurrencies",
+    "The Latest Shifts in the Crypto Market",
+    "Where the Top 5 Crypto Coins Stand Today",
+    "Digital Gold Moves: Today's Bitcoin & Altcoin Action",
+    "Decentralized Markets on Fire - Your Crypto Update",
+    "Blockchain Surge: Which Coins Are Leading Today?",
+    "Altseason Signals? Tracking the Top 5 Performers",
+    "Crypto Momentum Check: Real-Time Market Snapshot",
+    "The DeFi Effect: How the Market is Shifting Now",
+    "Hodlers' Guide: Today's Most Volatile Digital Assets",
+    "From Bitcoin to Solana: Market Movements Explained",
+    "Tokenomics in Action: Live Crypto Price Analysis",
+    "The Weekly Crypto Pulse: Major Shifts Happening",
+    "Smart Money Alert: Where Crypto Prices Are Heading",
+    "Layer 2 vs Layer 1: Who's Winning Today?",
+    "Mining the Data: Your Daily Blockchain Market Brief",
+    "Whale Watch: Tracking Big Moves in Today's Crypto",
+    "The Bull's Handbook: Essential Daily Crypto Metrics",
+    "Staking Spotlight: Coins Making Waves in the Market",
+    "Mempool Meter: Real-Time Crypto Market Insights",
+    "The Bear Case & Bull Case for Today's Top Cryptos",
+    "Exchange Flows: Understanding Today's Price Action",
+    "Bullish Signals: Is Crypto Ready for Liftoff?",
+    "Bitcoin Breakout Watch: The Market Is Moving Fast",
+    "Volatility Spikes: Altcoins Lead the Charge Today",
+    "Crypto Heatmap: Biggest Movers in the Digital Market",
+    "The Smart Investor's Daily Crypto Trend Report",
+    "Ethereum Pulse: Is the Bull Run Back in Motion?",
+    "Signal from the Chain: What Crypto Traders Need to Know",
+    "Top Coins in Motion: A Fresh Market Snapshot",
+    "Bitcoin, Ethereum, and the Rest of the Pack",
+    "The Daily Crypto Rush: Winners and Losers",
+    "Market Momentum Watch: Crypto Prices Are Shifting",
+    "When Crypto Turns Hot: The Biggest Gainers Today",
+    "Inside the Crypto Cycle: What Is Really Happening?",
+    "New Highs or Fakeouts? Breaking Down Today's Moves",
+    "The Next Crypto Wave: Which Coins Are Heating Up?",
+    "Weekend Crypto Watch: Price Action Across the Board",
+    "On-Chain Signals: What the Market Is Telling Us",
+    "Risk On, Risk Off: Crypto Is Moving Again",
+    "The Highest Movers: A Quick Crypto Market Rundown",
+    "Big Moves, Big Charts: Today's Crypto Leaders",
+    "As Bitcoin Moves, the Altcoins Follow Suit",
+    "Crypto Gains and Losses: The Daily Breakdown",
+    "The Market's Pulse: A Quick Look at Top Tokens",
+    "Fresh Crypto Data: A Daily Shot of Market Energy",
+    "The Digital Asset Ledger: What Changed Today?",
+    "Trend Watch: Crypto Prices Are Repricing Fast",
+    "Momentum in Motion: A Closer Look at the Top Coins",
+    "Chain Reaction: Where Crypto Is Heading Today",
+    "Directional Bias: Which Crypto Assets Are Leading?",
+    "Top Crypto Movers: Price Action You Can't Ignore",
+    "Daily Market Fuel: The Biggest Crypto Stories Today",
+    "Moonshot Watch: Which Coins Are Leading The Surge?",
+    "The Crypto Pulse: Trading Activity Is Building",
+    "Market Rotation: Which Coins Are Taking the Lead?",
+    "A Hot Day in Crypto: Gains, Losses, and Breakouts",
+    "The Weekly Crypto Watch: Trends Shaping the Market",
+    "Bitcoin and Friends: A Quick Read of Today's Moves",
+    "Crypto Ladder: Who Is Climbing Highest Right Now?",
+    "Price Action Review: Today's Top Digital Assets",
+    "Breaking Down the Big 5: Crypto Winners and Losers",
+    "The Crypto Board Is Moving: A Fast Market Update",
+    "Big Volume, Big Questions: What Crypto Is Saying",
+    "Bullish Pressure: Which Coins Are Leading the Rally?",
+    "Fresh Crypto Signals: The Market Is Getting Active",
+    "From Bitcoin to Solana: The Top Coin Story Today",
+    "Trading the Tape: Today's Biggest Crypto Moves",
+    "The Major Coins Are Talking: Here's What They Mean",
+    "The Crypto Market Is Stirring Again: What to Watch"
 ]
-
 selected_prefix = random.choice(title_variations)
 post_title = f"{selected_prefix}"
 
 # ==========================================
 # 6. DYNAMIC TITLE-BASED PERMLINK SLUG LOGIC
 # ==========================================
+# 1. Transform the randomly chosen prefix to lowercase
 raw_slug = selected_prefix.lower()
+# 2. Safely strip special characters using basic loop text filtering
 clean_chars = [char if char.isalnum() or char.isspace() else "" for char in raw_slug]
+# 3. Clean up spaces and join strings using standard hyphens
 slug_str = "-".join("".join(clean_chars).split())
+# 4. Combine the dynamic prefix slug with the current date to guarantee uniqueness
 post_permlink = f"{slug_str}-{now_eat.strftime('%Y%m%d')}"
 scanned_post_data = scan_latest_crypto_post(stm_check)
+
+
 
 print(f"✅ Dynamic Title Generated: '{post_title}'")
 print(f"✅ Matching Permlink Slug compiled: '{post_permlink}'")
@@ -432,33 +443,32 @@ print(f"✅ Matching Permlink Slug compiled: '{post_permlink}'")
 body_lines = [
     f"\n**{formatted_date}**  🕘 *{timestamp_utc}*\n",
     "*Layout provided by [Steemit Enhancer hommage](https://chromewebstore.google.com/detail/empty-title/gepddagaajclednflogimfmpoejjkcnj) by ayogom*\n",
-    "⚠️শুধু তথ্যের উদ্দেশ্যে। বিনিয়োগের উপদেশ নয়।\n",
-    "সর্বশেষ দাম (দ্য বিগ ফাইভ):\n",
+    "⚠️FOR INFORMATION PURPOSES ONLY. NOT INVESTMENT ADVICE.\n",
+    "Latest Prices (The Big Five):\n",
     format_row('btc'),
     format_row('eth'),
     format_row('bnb'),
     format_row('xrp'),
     format_row('sol'),
-    f"\n🔺**শীর্ষ গেইনার:** {top_coin_key.upper()}\n",
+    f"\n🔺**Top Gainer:** {top_coin_key.upper()}\n",
     f"![{selected_prefix}]({selected_display_image})",
-    "[My Bengali Blog](https://www.steemit.com/trending/hive-129948) & [Discord](https://discord.gg/amarbanglablog)\n",
-    "https://cdn.steemitimages.com/DQmZvVRHsowjHm4n9wHe1VvXceqbaTUYsquTVAUX9GsBQcf/IMG_20220926_174120.png\n",
-    "Vote [bangla.witness](https://steemlogin.com/sign/account-witness-vote?witness=bangla.witness&approve=true) Or Set @rme as your [proxy](https://steemitwallet.com/witnesses)\n",
-    "https://cdn.steemitimages.com/DQmRXkkCEbXLYwhPEYqkaUbwhy4FaqarQVhnzkh1Awp3GRw/witness_proxy_vote.png\n",
-    f'<div class="footer">\n  <div class="pull-left">\n    লেখক: @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  ©EGM 2016 - 2036\n</div>'
+    f'<div class="footer">\n  <div class="pull-left">\n    Author: @blog.god\n  </div>\n  <div class="pull-right">\n    <img src="https://cdn.steemitimages.com/DQmeJV5dmDXBLXQHGxdfsDggpQNgBymH7wuuQSZ4pmyACVi/1000029381.png" alt="Footer" />\n  </div>\n</div>\n<div class="pull-left">\n  ©EGM 2016 - 2036\n</div>'
 ]
 
 # Only inject the shout-out if a valid post was successfully scanned
 if scanned_post_data:
     author = scanned_post_data["author"]
     permlink = scanned_post_data["permlink"]
+    # Build the official Steemit deep link to the original post
     steemit_url = f"https://steemit.com/@{author}/{permlink}"
-
+    
+    # Format the shout-out line with an embedded hyperlink to the post
     shoutout_text = (
-        f"একটি বড় ধন্যবাদ @{author}। "
-        f"তাদের সর্বশেষ আপডেট দেখুন: **[{permlink}]({steemit_url})**\n"
+        f"A big shout-out to @{author} for keeping up with the crypto space today! "
+        f"Check out their latest update here: **[{permlink}]({steemit_url})**\n"
     )
-
+    
+    # Placed at index 1 to keep it near the top of the post as requested
     body_lines.insert(1, shoutout_text)
 
 post_body = "\n".join(body_lines)
